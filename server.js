@@ -22,9 +22,8 @@ app.get('/random', async (req, res) => {
     }
 
     const data = await axios(config);
-
+    
     res.send(data.data);
-    console.log(data);
 })
 
 const port = 8000;
