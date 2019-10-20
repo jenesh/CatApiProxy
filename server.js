@@ -8,7 +8,6 @@ const apiKey = require('./apiKey/catApi')
 const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
-app.u
 
 app.get('/', (req, res) => {
     res.json(apiKey);
@@ -27,7 +26,6 @@ app.get('/random', async (req, res) => {
     res.send(data.data);
     console.log(data);
 })
-
 
 const port = 8000;
 
